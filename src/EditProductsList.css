@@ -1,0 +1,141 @@
+.product-table-wrapper {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper-div {
+  margin-top: 120px;
+}
+
+.users-heading {
+  background: #1976d2;
+  color: white;
+  width: 280px;
+  height: 35px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px 2px #e1e1e1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.users-heading > .row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.users-body > .row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+}
+
+.users-body > .row:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 2px 3px 6px 4px #c5c5c5;
+}
+
+.users-body > div > .row {
+  width: 33.33%;
+  overflow: scroll;
+  font-size: 14px;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-evenly !important;
+}
+
+.action-btn > svg {
+  font-size: 14px;
+}
+
+.row-mobile {
+  display: none;
+}
+
+.edit-btn {
+  background: blue;
+  color: white;
+}
+
+.view-btn {
+  background: white;
+  border: solid 1px #e5e5e5;
+  margin-top: 5px;
+}
+
+.product-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .row-mobile {
+    display: block;
+  }
+
+  .wrapper-div {
+    width: 980px;
+  }
+
+  .users-heading {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper-div {
+    width: 980px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .users-heading {
+    width: 100%;
+  }
+
+  .users-body {
+    width: 100%;
+  }
+
+  .users-body > div > .row {
+    overflow: auto;
+    text-align: center;
+    width: 25%;
+  }
+
+  .action-btn {
+    justify-content: inherit !important;
+  }
+
+  .action-btn > svg {
+    margin-right: 5px;
+  }
+}
