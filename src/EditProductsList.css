@@ -8,7 +8,7 @@
   margin-top: 120px;
 }
 
-.users-heading {
+.productlist-heading {
   background: #1976d2;
   color: white;
   width: 280px;
@@ -21,13 +21,13 @@
   margin-bottom: 15px;
 }
 
-.users-heading > .row {
+.productlist-heading > .row {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.users-body > .row {
+.productlist-body > .row {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -39,13 +39,13 @@
   padding: 5px 10px;
 }
 
-.users-body > .row:hover {
+.productlist-body > .row:hover {
   cursor: pointer;
   transform: scale(1.05);
   box-shadow: 2px 3px 6px 4px #c5c5c5;
 }
 
-.users-body > div > .row {
+.productlist-body > div > .row {
   width: 33.33%;
   overflow: scroll;
   font-size: 14px;
@@ -83,7 +83,7 @@
   color: white;
 }
 
-.view-btn {
+.delete-btn {
   background: white;
   border: solid 1px #e5e5e5;
   margin-top: 5px;
@@ -104,7 +104,7 @@
     width: 980px;
   }
 
-  .users-heading {
+  .productlist-heading {
     width: 100%;
   }
 }
@@ -117,15 +117,15 @@
     flex-direction: column;
   }
 
-  .users-heading {
+  .productlist-heading {
     width: 100%;
   }
 
-  .users-body {
+  .productlist-body {
     width: 100%;
   }
 
-  .users-body > div > .row {
+  .productlist-body > div > .row {
     overflow: auto;
     text-align: center;
     width: 25%;

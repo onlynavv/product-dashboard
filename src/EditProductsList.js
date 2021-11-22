@@ -27,7 +27,7 @@ const EditProductsList = () => {
     return (
       <section className="container product-table-wrapper">
         <div className="wrapper-div">
-                <div className="users-heading">
+                <div className="productlist-heading">
                     <div className="row">
                         <div className="row-mobile">
                             <h4>Id</h4>
@@ -55,7 +55,7 @@ const EditProductsList = () => {
                         </div>
                     </div>
                 </div>
-                <div className="users-body">
+                <div className="productlist-body">
                     {products.map((item)=>{
                         const {name,image,id,price,rating,stock,status} = item
                         return(
@@ -83,7 +83,7 @@ const EditProductsList = () => {
                                 </div>
                                 <div className="row btn-wrapper">
                                     <Button className="action-btn edit-btn" onClick={()=>{history.push(`/editproducts/${id}`)}}><EditIcon /> Edit</Button>
-                                    <Button className="action-btn view-btn" onClick={()=>handleDelete(id)}><DeleteIcon /> Delete</Button>
+                                    <Button className="action-btn delete-btn" onClick={()=>handleDelete(id)}><DeleteIcon /> Delete</Button>
                                 </div>
                             </div>
                         )
